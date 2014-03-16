@@ -1,31 +1,62 @@
-.redditname a
-{
-background:url(%%banner%%);
-height: 100px;
-width: 1500px;
-float: left;
-text-indent: 9001px;
+/*#header-img-a,
+.redditname a,
+.tabmenu {
+    display: inline;
+    float: left;
 }
 
+.tabmenu{
+    position:relative;
+    top:100%;
+    margin-top:-15px!important;
+    margin-left: 350px!important;
+    margin-right: auto;
+}
+.redditname {
+    display: none;
+}
+#header-immg.default-header a{
+    display: none !important;
+}
 #header-bottom-left{
-height: 100px;
+    background: url(%%banner%%) !important;
+    height: 100px;
+    width: 2000px;
+    float: left;
+    text-indent: 9001px;
 }
 
 #header-bottom-left .tabmenu{
-position:absolute;
-left: 40px;
-bottom: 0;
-}
+    margin-left: auto;
+    margin-right: auto;
+    left: 40px;
+    bottom: 0;
+}*/
 
 /* ==Edurne Reddit CSS Theme v5.6 - (http://www.reddit.com/r/edurne/)== */
 
 /* GENERAL */
-body { position:relative; font-family:arial, helvetica, sans-serif; }
-body > .content { overflow:hidden; }
-.md p { font-family:Verdana, arial, sans-serif; padding:1px 0; }
-
-.link .usertext .md,.usertext table.markhelp,.btn .login-form-side,.infobar,#search,#search input[type=text],
-.link,#header-bottom-right #userbarToggle,.linkinfo,textarea,.rounded,.sidecontentbox .content {
+body { 
+    position:relative; 
+    font-family:arial, helvetica, sans-serif; 
+}
+/*body > .content { 
+    overflow:hidden; 
+}*/
+.md p { 
+    font-family:Verdana, arial, sans-serif; padding:1px 0; 
+}
+.link .usertext .md,
+.usertext table.markhelp,
+.btn .login-form-side,
+.infobar,
+#search,
+#search input[type=text], 
+.link,
+#header-bottom-right #userbarToggle,
+.linkinfo,textarea,
+.rounded,
+.sidecontentbox .content {
     -moz-border-radius:2px;
     -webkit-border-radius:2px;
     -o-border-radius:2px;
@@ -43,24 +74,66 @@ body > .content { overflow:hidden; }
     font-family:Verdana, arial, sans-serif;
 }
 
-#sr-header-area a { color:#54708b; }
-body.res-nightmode #header { border-color: #DDF; }
-body.res-nightmode #header .tabmenu li:not(.selected) a { color: #346; }
-#header .tabmenu li.selected a { border: 0; border-bottom: 1px solid #FFF; }
-#header .tabmenu li:not(.selected):hover a { background-color: #449EF8; color: #FFF; }
-body.res-nightmode #header .tabmenu li { background-color: #DDD !important; }
-body.res-nightmode #header .tabmenu li:not(.selected):hover a { background-color: #CCC; color: #444; }
-#header-img { margin:8px 20px 0; }
-.pagename { margin-right:25px; font-weight:bold; font-variant:normal; font-size:18px; }
-body.res-nightmode .pagename a { font-size: 18px !important; }
-#sr-header-area .dropdown.srdrop, #sr-header-area#srLeftContainer { padding-left:21px; }
-#sr-more-link, #header #sr-header-area #RESShortcutsEditContainer, #header #sr-header-area #RESShortcutsRight, #header #sr-header-area #RESShortcutsLeft,
-#header #sr-header-area #RESShortcutsAdd, #header #sr-header-area #RESShortcutsTrash { background-color:#c6daed; }
-body.res-nightmode #sr-header-area, body.res-nightmode #sr-more-link { background-color: #c6daed !important; }
-#sr-header-area #RESShortcutsEditContainer, #sr-more-link { border-right:20px solid #c6daed; font-weight:bolder; }
+#sr-header-area a {
+    color: #54708b
+}
+body.res-nightmode #header {
+    border-color: #DDF
+}
+body.res-nightmode #header .tabmenu li:not(.selected) a {
+    color: #346
+}
+#header .tabmenu li.selected a {
+    border: 0;
+    border-bottom: 1px solid #FFF;
+}
+#header .tabmenu li:not(.selected):hover a {
+    background-color: #449EF8;
+    color: #FFF;
+}
+body.res-nightmode #header .tabmenu li {
+    background-color: #DDD !important
+}
+body.res-nightmode #header .tabmenu li:not(.selected):hover a {
+    background-color: #CCC;
+    color: #444;
+}
+#header-img {
+    margin: 8px 20px 0
+}
+/*.pagename {
+    margin-right: 25px;
+    font-weight: bold;
+    font-variant: normal;
+    font-size: 18px;
+}*/
+body.res-nightmode .pagename a {
+    font-size: 18px !important
+}
+#sr-header-area .dropdown.srdrop,
+#sr-header-area#srLeftContainer {
+    padding-left: 21px
+}
+#sr-more-link,
+#header #sr-header-area #RESShortcutsEditContainer,
+#header #sr-header-area #RESShortcutsRight,
+#header #sr-header-area #RESShortcutsLeft,
+#header #sr-header-area #RESShortcutsAdd,
+#header #sr-header-area #RESShortcutsTrash {
+    background-color: #c6daed
+}
+body.res-nightmode #sr-header-area,
+body.res-nightmode #sr-more-link {
+    background-color: #c6daed !important
+}
+#sr-header-area #RESShortcutsEditContainer,
+#sr-more-link {
+    border-right: 20px solid #c6daed;
+    font-weight: bolder;
+}
 
 #header-bottom-right {
-    right:20px;
+    top: 73px !important;
     background-color:#deeaf6;
     -moz-border-radius:0;
     -webkit-border-radius:0;
@@ -69,8 +142,11 @@ body.res-nightmode #sr-header-area, body.res-nightmode #sr-more-link { backgroun
     -khtml-border-radius:0;
     border-radius:0;
 }
-body.res-nightmode #header-bottom-right { background-color: #DEEAF6 !important; }
-#header-bottom-right.res-navTop { top: 21px !important; }
+body.res-nightmode #header-bottom-right { 
+    background-color: #DEEAF6 !important; }
+/*#header-bottom-right.res-navTop { 
+    top: 21px !important;
+}*/
 
 #header-bottom-right.res-navTop #userbarToggle {
     -moz-border-radius-topleft: 0;
@@ -122,21 +198,60 @@ body.res-nightmode #search {
 }
 
 /* side */
-.side { margin: 0 20px; }
-.side .md { overflow:hidden; }
-.titlebox { padding:0 10px; }
-.titlebox .bottom { display:none; }
-.side .titlebox > h1 { font-size:34px; letter-spacing: -1px;}
-.linkinfo { padding:15px; border:none; background-color:#CEE3F8; }
-body.res-nightmode .side .redditname a { color: #DDD !important; }
-.sidebox.submit .spacer, .sidebox.create { display:none; }
-.linkinfo .score .word,.linkinfo .score .number { font-size:15px; }
-.sidecontentbox .content { border:1px solid #EAEAEA; background-color:#FAFAFA; padding:10px; }
-.icon-menu li { margin:0 0 5px; }
-.side h1, .side h2, .side h3 {color: #222;}
-.side h1 {font-size: 19px;}
-.side h2 {font-size: 16px;}
-.side h3 {font-size: 14px;}
+.side {
+    margin: 20px
+}
+.side .md {
+    overflow: hidden
+}
+.titlebox {
+    padding: 0 10px
+}
+.titlebox .bottom {
+    display: none
+}
+.side .titlebox > h1 {
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+.linkinfo {
+    padding: 15px;
+    border: none;
+    background-color: #CEE3F8;
+}
+body.res-nightmode .side .redditname a {
+    color: #DDD !important
+}
+.sidebox.submit .spacer,
+.sidebox.create {
+    display: none
+}
+.linkinfo .score .word,
+.linkinfo .score .number {
+    font-size: 15px
+}
+.sidecontentbox .content {
+    border: 1px solid #EAEAEA;
+    background-color: #FAFAFA;
+    padding: 10px;
+}
+.icon-menu li {
+    margin: 0 0 5px
+}
+.side h1,
+.side h2,
+.side h3 {
+    color: #222
+}
+.side h1 {
+    font-size: 19px
+}
+.side h2 {
+    font-size: 16px
+}
+.side h3 {
+    font-size: 14px
+}
 
 body.res-nightmode .login-form-side {
     background-color: #111 !important;
@@ -144,29 +259,56 @@ body.res-nightmode .login-form-side {
     border: 1px solid #DDD !important;
 }
 
-body.res-nightmode .login-form-side #remember-me label { color: #DDD !important; }
-body.res-nightmode .login-form-side #remember-me input { width: auto !important; margin-left: 6px; }
-body.res-nightmode .side .login-form-side .submit { padding: 4px; background-color: transparent; }
-body.res-nightmode .side .login-form-side .submit .btn { margin: auto; }
-
+body.res-nightmode .login-form-side #remember-me label {
+    color: #DDD !important
+}
+body.res-nightmode .login-form-side #remember-me input {
+    width: auto !important;
+    margin-left: 6px;
+}
+body.res-nightmode .side .login-form-side .submit {
+    padding: 4px;
+    background-color: transparent;
+}
+body.res-nightmode .side .login-form-side .submit .btn {
+    margin: auto
+}
 /* submit */
-.sidebox.submit { width:300px; }
-body.res-nightmode .sidebox { padding-left: 0 !important; }
-body.res-nightmode .sidebox.submit { background-image: none !important; }
-
-body.res-nightmode .sidebox.submit .nub {
+.sidebox.submit {
+    width: 300px
+}
+body.res-nightmode .sidebox {
+    padding-left: 0 !important
+}
+body.res-nightmode .sidebox.submit {
+    background-image: none !important
+}
+/*body.res-nightmode .sidebox.submit .nub {
     background: #222;
     border-left: 24px solid #393939;
+}*/
+.nub {
+    display: none
 }
-body.res-nightmode .sidebox, body.res-nightmode .subredditbox, body.res-nightmode .subreddit-info, body.res-nightmode .raisedbox, body.res-nightmode .login-form-side {
+body.res-nightmode .sidebox,
+body.res-nightmode .subredditbox,
+body.res-nightmode .subreddit-info,
+body.res-nightmode .raisedbox,
+body.res-nightmode .login-form-side {
     border: 0 !important;
     border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
 }
-body.res-nightmode .sidebox.submit .morelink a { color: #DDD !important; }
-body.res-nightmode .sidebox.submit:hover { background-color: #444 !important; }
-body.res-nightmode .sidebox.submit:hover .nub { border-left-color: #444; }
+body.res-nightmode .sidebox.submit .morelink a {
+    color: #DDD !important
+}
+body.res-nightmode .sidebox.submit:hover {
+    background-color: #444 !important
+}
+body.res-nightmode .sidebox.submit:hover .nub {
+    border-left-color: #444
+}
 
 .morelink,.morelink:hover,.side a[href*='/#btn'] {
     font-weight:normal;
